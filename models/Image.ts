@@ -3,8 +3,8 @@ import mongoose from 'mongoose'
 interface IImage extends mongoose.Document {
   title: string
   url: string
-  categoryId: string
-  subcategoryId?: string
+  categoryId: mongoose.Schema.Types.ObjectId
+  subcategoryId?: mongoose.Schema.Types.ObjectId
   price?: number
   views: number
   code: string
